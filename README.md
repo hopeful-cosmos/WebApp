@@ -2,6 +2,8 @@
 
 # Description 💡
 
+Ever wondered what the world is wishing for? Want to explore the hopes and dreams of others all in one place? 
+
 Hopeful Cosmos is a web application where visitors and explore other users wishes and make their own. Once a wish is made it is added to the screen. You can hover over the star and click on it to see what wish was made.
 
 A card will appear detailing the following information: 
@@ -9,7 +11,8 @@ A card will appear detailing the following information:
 - Who the wish was made by
 - Where the wish was made if the user allows the web app to use their location, i.e, New Haven, CT.
 
-#Tech 
+# Tech 
+
 
 
 
