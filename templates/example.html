@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Hopeful Universe</title>
+
+    <!-- Basic Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A universe of hope where you can see what the world is wishing for or make your own wish">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.ico') }}?{{ cache_id }}">
+
+    <!-- **********************
+         Render CSS
+         ********************** -->
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/example.css') }}?{{ cache_id}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/button.css') }}?{{ cache_id}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/menu.css') }}?{{ cache_id}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/startwink.css') }}?{{ cache_id}}">
+
+    <!-- **********************
+	 Import Google Fonts Amatic SC and Josefin Sans
+	 ********************** -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Slab" />
+
+
+    <!-- **********************
+         Import JQuery and form validation plugin
+	 ********************** -->
+    <script defer src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+
+    <!-- **********************
+         Render Javascript from static folder
+	 ********************** -->
+    <script defer src="static/scripts/example.js?{{ cache_id }}"></script>
+    <script defer src="static/scripts/menu-wheel.js?{{ cache_id }}"></script>
+<!--    <script defer src="static/scripts/anime.min.js"></script> -->
+
+    <!-- **********************
+	 Import fontawesome webkit
+	 ********************** -->
+    <script defer src="https://kit.fontawesome.com/2bf2f2b87d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container" id="universe">
+      <div class="container" id="cardcontainer">
+	<div style="flex: 1 1 15%;">
+	  <h1 style="margin: 0;"></h1>
+	</div>
+	<div style="flex: 1 1 85%">
+	  <div>
+	    <h2>Owner</h2>
+	    <p></p>
+	  </div>
+	  <div>
+	    <h2>Wish</h2>
+	    <p></p>
+	  </div>
+	  <div id="location">
+	    <h2>Location</h2>
+	    <p></p>
+	  </div>
+	  <div style="display: flex; align-items: center;">
+	    <button class="glow-on-hover" type="button"><i class="fas fa-window-close"></i></button>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <div class="container" id="form">
+      <h1>Make a wish!</h1>
+      <form id="wishform">
+	<div class="fieldcontainer">
+	  <label for="name">Name</label>
+	  <div id="iconNbox">
+	    <i class="far fa-user" id="fieldicon"></i>
+	    <div id="textbox">
+	      <input type="text" name="name" id="name" placeholder="Johnny" require="true"/>
+	    </div>
+	  </div>
+	</div>
+	<div class="fieldcontainer">
+	  <label for="wish">Wish</label>
+	  <div id="iconNbox">
+	    <i class="far fa-star" id="fieldicon"></i>
+	    <div id="textbox">
+	      <input type="text" name="wish" id="wish" placeholder="I wish for a new bike!" />
+	    </div>
+	  </div>
+	</div>
+	<div class="fieldcontainer" id="statefieldcontainer">
+	  <label for="state">State / Province</label>
+	  <div id="iconNbox">
+	    <i class="fas fa-mountain" id="fieldicon"></i>
+	    <div id="textbox">
+	      <input type="text" name="state" id="state" placeholder="California" />
+	    </div>
+	  </div>
+	</div>
+	<div class="fieldcontainer" id="countryfieldcontainer">
+	  <label for="country">Country</label>
+	  <div id="iconNbox">
+	    <i class="far fa-flag" id="fieldicon"></i>
+	    <div id="textbox">
+	      <input type="text" name="country" id="country" placeholder="USA" />
+	    </div>
+	  </div>
+	</div>
+	<div class="fieldcontainer">
+	  <label for="star_name">Star Name</label>
+	  <div id="iconNbox">
+	    <i class="fas fa-signature" id="fieldicon"></i>
+	    <div id="textbox">
+	      <input type="text" name="star_name" id="star_name" placeholder="Aldebaran"/>
+	    </div>
+	  </div>
+	</div>
+	<div class="fieldcontainer">
+	  <button class="glow-on-hover" type="submit" form="wishform"><i class="fas fa-meteor"></i></button>
+	</div>
+      </form>
+      <div id="bottom">
+	<div class="about-color"><h3><a href="https://mohamethseck34.wixsite.com/hopefulcosmos" target="_blank">About</a></h3></div>
+      </div>
+    </div>
+  </body>
+</html>

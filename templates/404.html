@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Title and Metadata -->
+    <meta charset="utf-8">
+    <title>404 Not Found</title>
+    <meta name="description" content="Front Page">
+    <meta name="author" content="Hopeful Cosmos">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.ico') }}?{{ cache_id }}">
+
+    <!-- **********************
+	 Render CSS
+	 ********************** -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/404.css') }}?{{ cache_id }}">
+
+    <!-- **********************
+	 Import JQuery
+	 ********************** -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- **********************
+	 Render Javascript
+	 ********************** -->
+    <!-- <script src="static/scripts/example.js"></script> -->
+  </head>
+  <body>
+    <!-- <img src="{{ url_for('static', filename='images/404.gif') }}?{{ cache_id }}"> -->
+    <div class="button_cont" align="center"><a class="example_e" href="/">Return Home</a></div>
+  </body>
+</html>

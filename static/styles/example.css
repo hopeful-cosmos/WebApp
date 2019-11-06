@@ -1,0 +1,141 @@
+html, body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.container#universe {
+    position: relative;
+    min-height: 60%;
+    flex: 1 1 60%;
+    text-align: center;
+    background: #000000;
+}
+
+div.container#form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background: #1F2623;
+    flex: 1 1 40%;
+}
+
+div.container form#wishform {
+/*    opacity: 0; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 auto;
+    border-radius: 1rem;
+    width: 60%;
+    background: linear-gradient(to bottom, #A6A6A8, #848487);
+    /* box-shadow: 0 1px 1.5rem rgba(255,255,255,0.3); */
+}
+
+div.container form#wishform label {
+    color: #FFFFFF;
+    font-family: "Josefin Slab";
+}
+
+div.container form#wishform input {
+    color: #272635;
+    width: 90%;
+    font-family: "Josefin Slab", "Arial", san-serif;
+}
+
+div.container#form  h1 {
+/*    opacity: 0; */
+    flex: 0 1 auto;
+    color: #FFFFFF;
+    font-family: "Amatic SC", "Arial", sans-serif;
+}
+
+div#form .fieldcontainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div.container#form form#wishform div.fieldcontainer#statefieldcontainer, div.container#form form#wishform div.fieldcontainer#countryfieldcontainer {
+    display: none;
+}
+
+#fieldicon {
+    margin-right: .5rem;
+}
+
+div#bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    width: 100%;
+    color: white;
+    font-family: "Amatic SC", "Arial", sans-serif;
+}
+
+div#bottom div>h3 {
+  /*  opacity: 0; */
+}
+
+#iconNbox {
+    display: flex;
+    flow-flow: row nowrap;
+}
+
+#textbox {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body div.container div.container#cardcontainer {
+    display: flex;
+    display: none;
+    flex-flow: column nowrap;
+    position: absolute;
+    overflow: scroll;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    padding: 1%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgb(244, 239, 103);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-family: "Amatic SC", "Arial", sans-serif;
+}
+
+div.container#universe div.container#cardcontainer div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+div.container#cardcontainer div h1 {
+    font-size: calc(1.2em + 1vw)
+}
+div.container#cardcontainer div h2,  div.container#cardcontainer div p {
+    margin: 0;
+    font-size: calc(1.2em + 1vw)
+}
+
+.starcontainer:hover>.star {
+    box-shadow:
+    0 0 20px 10px #fff,  /* inner white */
+    0 0 30px 15px #f0f, /* middle magenta */
+    0 0 40px 20px #0ff; /* outer cyan */
+}
